@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+ <html>
+      <head>
+      <title>The Cincinnati Reds Misery Index</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">   
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+      </head>
+      <body>
+        <br>
+        <h1 style="font-size: 50px; font-family: 'IM Fell English SC'; text-align: center; ">Days Since The Cincinnati Reds Have Won A Playoff Game:</h1>
+        <center>
+        <p id="show" style="font-size: 250px; font-family: 'IM Fell English SC'; text-align: center; background-color: #ee2200; color: #ffffff; border-radius: 50px; display: inline-block; padding-inline-start: 90px; padding-inline-end: 90px; margin: 40px;"></p>
+        </center>
+        <script  type="text/javascript">
+          var initialDate = new Date(2012, 9, 9); // Oct 9th 2012
+          var now = Date.now();
+          var difference = now - initialDate;
+          var millisecondsPerDay = 24 * 60 * 60 * 1000;
+          var daysSince = Math.floor(difference / millisecondsPerDay);
+          document.getElementById('show').innerHTML = daysSince.toString();
+        </script>
+      </body>
+    </html>
